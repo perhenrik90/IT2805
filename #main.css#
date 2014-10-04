@@ -18,13 +18,3 @@ header
     right:0px;
     height:100px;
 }
-
-nav.topMenu
-{
-    background-color:#000;
-    position:fixed;
-    top:100px;
-    left:0px;
-    right:0px;
-    height:40px;
-}
