@@ -41,18 +41,31 @@ nav.topMenu
     right:0px;
     height:40px;
 }
+nav.topMenu a
+{
+    margin-left:20px;
+    font-size:22px;
+    font-family:sans-serif;
+    color:#EEE;
+}
 
 /*********************
  * Main section
  *********************/
 #sidemenu
 {
-    position:fixed;
+    position:absolute;
     left:0px;
-    top:200px;
+    top:100px;
     bottom:200px;
     width:150px;
+    height:400px;
     border:2px solid black;
+    padding:10px;
+}
+#sidemenu h1
+{
+    margin-top:2px;
 }
 
 #maintextarea
@@ -63,6 +76,21 @@ nav.topMenu
     top:10px;
 }
 
+/** style kode eksmepel bokser **/
+pre
+{
+    margin-top:2px;
+    width:400px;
+    border:2px solid #888;
+    border-radius:5px;
+    padding:5px;
+}
+.exampleHeader
+{
+    margin:0px;
+    font-size:14px;
+    color:#888;
+}
 
 section
 {
@@ -70,6 +98,11 @@ section
     top:120px;
     left:10px;
     right:10px;
+}
+
+#maintextarea p
+{
+    font-size:18px;
 }
 
 /********************

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Python skolen - Introduksjon</title>
+	<script src="../syntax/python.js"></script>
+	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
+</head>
+
+<body>
+  <header>
+    <h1>Python Skolen - Introduksjon</h1>
+  </header>
+
+  <nav class="topMenu">
+    <a href="../index.html">Skole</a> |
+    <a>Kontakt Oss</a> |
+    <a>Nettsidekart</a>
+  </nav>
+
+  <section>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+      <h1>Tema</h1>
+      <a href="../introduksjon/index.html"><p>Introduksjon</p></a>
+      <a href="../variabler/index.html"><p>Variabler</p></a>
+      <a href="../lister/index.html"><p>Lister</p></a>
+      <a href="../betingelser/index.html"><p>Betingelser</p></a>
+      <a href="../pakker/index.html"><p>Pakker</p></a>
+      <a href="../funksjoner/index.html"><p>Funksjoner</p></a>
+      <a href="../objekter/index.html"><p>Objekter</p></a>
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Introduksjon</h1>
+      <p>Python er et objektorientert programmeringsspråk utviklet av Guido van Rossum. 
+	 Forfatteren av språket gav navnet Python fordi han mener at programmering skal være gøy.
+	 For å kunne kjøre python kode må man ha en python inteprenter (tolker) som oversetter koden 
+	 til maskinkode. Hvis du bruker Linux eller OS X har du allerde en python inteprenter installert, 
+	men hvis du har en Windows maskin kan du laste ned en inteprenter fra 
+	<a href="http://www.python.org">Python sin side.</a></p>
+
+      <p>Kommentarer er linjer i koden som inteprenteren ignorerer. En kommentar begynter med en hashtag (#) 
+	 og varer ut linjen. Bruk kommentarer for å forklare hva du gjør i koden </p>
+
+      <!-- Eksempel kode --->
+      <h2 class="exampleHeader">Eksempel</h2>
+      <pre id="python">
+	# dette er en kommentar
+	print "Hei Verden" 
+      </pre>
+      <h2 class="exampleHeader">Utskrift</h2>
+      <pre>
+	Hei Verden
+      </pre>
+      <script>
+	x = document.getElementById("python");
+  	applyHeadlight(x);
+      </script>
+    </div>
+  </section>
+
+  <footer>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
+    | sist oppdatert: 5.oktober 2014</p>
+  </footer>
+</body>
+</html>
