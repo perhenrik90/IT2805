@@ -8,46 +8,23 @@ function applyHeadlight(preElement)
 {
     // hent kode
     c = preElement.innerHTML;
-    lines = c.split("\n")
-    newc = "";
-    for(i in lines)
-    {
-	line = lines[i];
-	line = higlightKeywords(line);
-	line = higlightNumbers(line);
-	newc += line;
-	newc += "\n";
-    }
-    preElement.innerHTML = newc;
+    
+    // headlight keywords
+    c = c.replace(/(def)/g, "<key>$1</key>");
+    c = c.replace(/(print)/g, "<key>$1</key>");
+    c = c.replace(/(return)/g, "<key>$1</key>");
+    c = c.replace(/(class)/g, "<key>$1</key>");
+    c = c.replace(/(if)/g, "<key>$1</key>");
+    c = c.replace(/(else)/g, "<key>$1</key>");
+    c = c.replace(/(while)/g, "<key>$1</key>");
+
+    // headlight tall
+    c = c.replace(/(\d+)/g, "<number>$1</number>");
+
+    // headlight strings
+    c = c.replace(/(".*")/g, "<string>$1</string>");
+    preElement.innerHTML = c;
 }
 
 
-keywordlist = new Object();
-keywordlist.def = 1;
 
-function higlightKeywords(line)
-{
-    if(line.indexOf("def"))
-    {
-	line = line.replace("def", "<key>def</key>");
-    }
-    if(line.indexOf("return"))
-    {
-	line = line.replace("return", "<key>return</key>");
-    }
-    if(line.indexOf("print"))
-    {
-	line = line.replace("print", "<key>print</key>");
-    }
-    if(line.indexOf("class"))
-    {
-	line = line.replace("class", "<key>class</key>");
-    }
-
-    return line;
-}
-
-function higlightNumbers(line)
-{
-    return line.replace(/(\d+)/g, "<number>$1</number>");
-}

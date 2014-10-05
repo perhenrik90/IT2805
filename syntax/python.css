@@ -1,4 +1,10 @@
 
+pre
+{
+    font-family:sans-serif;
+    font-size:14px;
+}
+
 pre key
 {
 	color:#061;
@@ -7,4 +13,9 @@ pre key
 pre number
 {
     color:#01A;
+}
+
+pre string
+{
+    color:#A00;
 }
