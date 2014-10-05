@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf8"></meta>
 	<link rel="stylesheet" type="text/css" href="main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script src="syntax/python.js"></script>
+	<link rel="stylesheet" type="text/css" href="syntax/python.css"></link>
 </head>
 
 <body>
@@ -11,12 +14,36 @@
   </header>
 
   <nav class="topMenu">
-    <a href="index.html">Home</a>
+    <a href="index.html">Home</a> |
+    <a>Kontakt</a> |
+    <a>Nettsidekart</a>
   </nav>
 
   <section>
-    <h1>Velkommen</h1>
-    <p>Dette er en python tutorial</p>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+      <p>Introduksjon</p>
+      <p>Variabler</p>
+      <p>Betingelser</p>
+      <p>Funksjoner</p>
+      <p>Objekter</p>
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Velkommen til Python skolen</h1>
+      <p>Python skolen gir deg en enkel og rask innføring
+	 til programmeringsspråket python. </p>
+
+      <pre id="python">
+	def test():
+	   print "Hello World"
+ 	   x = 13 y = 15
+      </pre>
+      <script>
+	x = document.getElementById("python");
+  	applyHeadlight(x);
+      </script>
+    </div>
   </section>
 
   <footer>
