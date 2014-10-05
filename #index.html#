@@ -3,9 +3,6 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css"></link>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-	<script src="syntax/python.js"></script>
-	<link rel="stylesheet" type="text/css" href="syntax/python.css"></link>
 </head>
 
 <body>
@@ -35,15 +32,9 @@
 	 til programmeringsspråket python. </p>
 
       <pre id="python">
-	# Dette er en kommentar
 	def test():
 	   print "Hello World"
- 	   x = 13 y = 15
       </pre>
-      <script>
-	x = document.getElementById("python");
-  	applyHeadlight(x);
-      </script>
     </div>
   </section>
 

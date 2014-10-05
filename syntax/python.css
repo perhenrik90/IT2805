@@ -10,12 +10,27 @@ pre key
 	color:#061;
 }
 
+
 pre number
 {
     color:#01A;
 }
 
+/** style strings **/
 pre string
 {
+    color:#A00!important;
+}
+pre string key
+{
     color:#A00;
+}
+pre string number
+{
+    color:#A00;
+}
+
+pre comment
+{
+    color:#666;
 }
