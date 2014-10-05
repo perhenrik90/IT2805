@@ -7,3 +7,7 @@ Todolist for prosjekt
 []      - Pakker
 []      - Funksjoner
 []      - Objekter
+
+[]	- Kontakt (kontakt.html)
+[]	- Sidekart (denne tar vi til slutt)
+
