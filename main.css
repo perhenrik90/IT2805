@@ -60,8 +60,11 @@ nav.topMenu a
     bottom:200px;
     width:150px;
     height:400px;
+    background-color:#FFF;
     border:2px solid black;
+    border-radius:5px;
     padding:10px;
+    
 }
 #sidemenu h1
 {
