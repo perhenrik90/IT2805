@@ -1,8 +1,8 @@
 Todolist for prosjekt
 
-[ph]    - Introduksjon
-[]      - Variabler
-[]      - Lister
+[x]    - Introduksjon (PH)
+[]      - Variabler (SY)
+[]      - Lister (EM)
 []      - Betingelser
 []      - Pakker
 []      - Funksjoner
