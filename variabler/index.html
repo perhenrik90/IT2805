@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../main.css"></link>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Python skolen - Introduksjon</title>
+	<title>Python skolen - Variabler</title>
 	<script src="../syntax/python.js"></script>
 	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
 </head>
 
 <body>
   <header>
-    <h1>Python Skolen - Introduksjon</h1>
+    <h1>Python Skolen - Variabler</h1>
   </header>
 
   <nav class="topMenu">
@@ -33,27 +33,41 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Introduksjon</h1>
-      <p>Python er et objektorientert programmeringsspråk utviklet av Guido van Rossum. 
-	 Forfatteren av språket gav navnet Python fordi han mener at programmering skal være gøy.
-	 For å kunne kjøre python kode må man ha en python inteprenter (tolker) som oversetter koden 
-	 til maskinkode. Hvis du bruker Linux eller OS X har du allerde en python inteprenter installert, 
-	men hvis du har en Windows maskin kan du laste ned en inteprenter fra 
-	<a href="http://www.python.org">Python sin side.</a></p>
+      <h1>Variabler</h1>
+      <p>En variabel er noe med en verdi som kan endre seg. Det kan foreksempel være en variabel som heter navn
+	som har lagret enten et navn eller en liste med navn. Helt enkelt forklart er en variabel bare en boks 
+	som du kan sette ting i. Du kan bruke variabler til å lagre alle slags ting.</p>
 
-      <p>Kommentarer er linjer i koden som inteprenteren ignorerer. En kommentar begynter med en hashtag (#) 
-	 og varer ut linjen. Bruk kommentarer for å forklare hva du gjør i koden </p>
+      <p>Variabler er brukes veldig mye i python, og hjelper å gjøre program mer oversiktlig og penere å se på.</p>
 
       <!-- Eksempel kode --->
-      <h2 class="exampleHeader">Eksempel</h2>
+      <h2 class="exampleHeader">Eksempel 1</h2>
       <pre id="python">
-	# dette er en kommentar
-	print "Hei Verden" 
+	# dette en variabel
+	a = 10
+	# for å se hvilken verdi variabelen 'a' har kan du skrive:
+	print(a)
+	# variabler med tallverdi kan brukes i utregninger foreksempel:
+	print(a*2)
       </pre>
-      <h2 class="exampleHeader">Utskrift</h2>
+      <h2 class="exampleHeader">Utskrift 1</h2>
       <pre>
-	Hei Verden
+	10
+	20
       </pre>
+      <!-- Eksempel kode --->
+      <h2 class="exampleHeader">Eksempel 2</h2>
+      <pre id="python">
+	# variabler kan også brukes til å lagre tekst.	
+	navn="Oddvar Brå"
+	print(navn)
+      </pre>
+      <h2 class="exampleHeader">Utskrift 2</h2>
+      <pre>
+	Oddvar Brå
+      </pre>
+	
+
       <script>
 	x = document.getElementById("python");
   	applyHeadlight(x);
@@ -62,8 +76,8 @@
   </section>
 
   <footer>
-    <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
-    | sist oppdatert: 5.oktober 2014</p>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Syver Bolstad
+    | sist oppdatert: 9.oktober 2014</p>
   </footer>
 </body>
 </html>
