@@ -26,11 +26,15 @@ pre string
 }
 pre string key
 {
-    color:#A00;
+    color:#A00!important;
 }
 pre string number
 {
     color:#A00;
+}
+pre literal
+{
+    color:#550;
 }
 
 pre comment

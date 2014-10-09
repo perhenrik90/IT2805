@@ -4,6 +4,7 @@
  * @author Per-Henrik Kvalnes
  **************************************/
 
+// gå gjennom alle tags av klassen syntax:python
 function applyHeadlight()
 {
     elements = document.getElementsByClassName("syntax:python");
@@ -16,12 +17,13 @@ function applyHeadlight()
     }
 }
 
+
 function applyHeadlightForElement(preElement)
 {
     // hent kode
     c = preElement.innerHTML;
     
-    // headlight keywords
+    // tag alle nøkkelordx
     c = c.replace(/ (def) /g, "<key> $1 </key>");
     c = c.replace(/ (print) /g, "<key> $1 </key>");
     c = c.replace(/ (return) /g, "<key> $1 </key>");
@@ -54,15 +56,16 @@ function applyHeadlightForElement(preElement)
     c = c.replace(/(lambda)/g, "<key>$1</key>");
     c = c.replace(/ (try) /g, "<key> $1 </key>");
 
-    // headlight tall
-    c = c.replace(/(\d+)/g, "<number>$1</number>");
+    // tag alle tall
+    c = c.replace(/( \d+ )/g, "<number>$1</number>");
+    c = c.replace(/(\W)(\d+)/g, "$1<number>$2</number>");
 
-    // headlight strings
+
+    // tag alle tekst strenger
     c = c.replace(/(".*")/g, "<string>$1</string>");
     c = c.replace(/('.*')/g, "<string>$1</string>");
 
-
-    // headlight comments
+    // tag kommentarer
     c = c.replace(/(#.*\n)/g, "<comment>$1</comment>");
     preElement.innerHTML = c;
 }
