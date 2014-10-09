@@ -4,7 +4,19 @@
  * @author Per-Henrik Kvalnes
  **************************************/
 
-function applyHeadlight(preElement)
+function applyHeadlight()
+{
+    elements = document.getElementsByClassName("syntax:python");
+    alert(elements.length);
+    for(i = 0; i < elements.length; i ++)
+    {
+	element = elements[i];
+
+	applyHeadlightForElement(element);
+    }
+}
+
+function applyHeadlightForElement(preElement)
 {
     // hent kode
     c = preElement.innerHTML;
