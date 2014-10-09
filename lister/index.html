@@ -33,33 +33,133 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Introduksjon</h1>
-      <p>Python er et objektorientert programmeringsspråk utviklet av Guido van Rossum. 
-	 Forfatteren av språket gav navnet Python fordi han mener at programmering skal være gøy.
-	 For å kunne kjøre python kode må man ha en python inteprenter (tolker) som oversetter koden 
-	 til maskinkode. Hvis du bruker Linux eller OS X har du allerde en python inteprenter installert, 
-	men hvis du har en Windows maskin kan du laste ned en inteprenter fra 
-	<a href="http://www.python.org">Python sin side.</a></p>
+      <h1>Lister</h1>
+      <p>En liste i Python er noe som kan inneholde flere elementer. Elementene behøver ikke å være av samme type så du kan lagre forskjellige type verdier sammen. For å lage en liste setter du listenavnet lik flere elementer etter hverandre separert med komma i mellom og klammer på hver side. </p>
 
-      <p>Kommentarer er linjer i koden som inteprenteren ignorerer. En kommentar begynter med en hashtag (#) 
-	 og varer ut linjen. Bruk kommentarer for å forklare hva du gjør i koden </p>
+      
 
-      <!-- Eksempel kode --->
+      
       <h2 class="exampleHeader">Eksempel</h2>
       <pre id="python">
-	# dette er en kommentar
-	print "Hei Verden" 
+
+	list1 = ['katt', 5, 'fredag', 7, 2014];
+        list2 = [1,2,3,4,5];
+
+	print "List 1:", list1 
+        print "List 2:", list2
       </pre>
       <h2 class="exampleHeader">Utskrift</h2>
       <pre>
-	Hei Verden
+	List 1: ['katt', 5, 'fredag', 7, 2014]
+        List 2: [1,2,3,4,5]
       </pre>
       <script>
 	x = document.getElementById("python");
   	applyHeadlight(x);
       </script>
+      <br>
+
+
+
+
+<h1>Hente ut verdier i lister:</h1>
+      <p>For å hente ut en eller flere verdier av en liste i Python, bruker du klammer som inneholder posisjonen til verdien eller verdiene du leter etter i lista. For nye programmere der ute må dere huske at mange programmeringsspråk bruker 0-indeksering, dvs. at det første elementet i en liste kalles for element nummer 0, element nummer 2 for 1 osv.</p>
+
+
+<h2 class="exampleHeader">Eksempel</h2>
+      <pre id="python">
+
+  list1 = ['katt', 5, 'fredag', 7, 2014];
+  list2 = [1,2,3,4,5];
+
+  print "Element 0: ", list1[0]
+  print "Element 2 til 4:", list2[1:3]
+</pre>
+      <h2 class="exampleHeader">Utskrift</h2>
+      <pre>
+        Element 0: katt
+        Element 2 til 4: [2,3,4]
+      </pre>
+
+
+<br>
+      <h1>Oppdatere listeverdier:</h1>
+      <p>Hvis du vil oppdatere en eller flere verdier i en liste, kan det gjøres ved skrive listeposisjonen = den nye verdien du vil den skal ha. Det kan også gjøres med append()-metoden som legger til elementer på slutten av listen.</p>
+
+
+<h2 class="exampleHeader">Eksempel</h2>
+      <pre id="python">
+
+  list1 = ['katt', 5, 'fredag', 7, 2014];
+
+  print "Verdi på indeks 2: "
+  print list1[2];
+  #Så endrer vi verdien fra fredag til lørdag
+  list[2] = lørdag;
+  print "Ny verdi på indeks 2: "
+  print list[2];
+
+  #append()-metoden
+  list1.append('bacon','egg');
+  print "Listen etter å ha lagt til elementer med append()-metoden."
+  print list1;
+
+</pre>
+      <h2 class="exampleHeader">Utskrift</h2>
+      <pre>
+        Verdi på indeks 2: fredag
+        Ny verdi på indeks 2: lørdag
+        Listen etter å ha lagt til elementer med append()-metoden.
+        ['katt', 5, 'lørdag', 7, 2014, 'bacon', 'egg']
+      </pre>
+
+
+
+<br>
+      <h1>Slette listeelementer:</h1>
+      <p>Om du ønsker å slette et element fra en liste, kan det gjøres enten ved å bruke del(delete), hvis du vet hvilket nummer elementet du skal slette har, eller remove()-metoden hvis du vet den spesifikke verdien til elementet.</p>
+
+
+<h2 class="exampleHeader">Eksempel</h2>
+      <pre id="python">
+
+  list1 = ['katt', 5, 'fredag', 7, 2014];
+
+  print list1;
+  del list1[3];
+  print "Etter å ha slettet verdien 7 fra lista."
+  print list1;
+
+  #remove()-metoden
+  list1.remove(2014);
+  print "Listen etter å ha fjernet 2014 med remove()-metoden"
+  print list1;
+  
+</pre>
+      <h2 class="exampleHeader">Utskrift</h2>
+      <pre>
+        ['katt', 5, 'fredag', 7, 2014]
+        Etter å ha slettet verdien 7 fra lista.
+        ['katt', 5, 'fredag', 2014]
+        Listen etter å ha fjernet 2014 med remove()-metoden
+        ['katt', 5, 'fredag']
+      </pre>
+
+
+
+
+      <br>
+      <h1>Noen nyttige list operasjoner:</h1>
+      <p>Til slutt har vi noen nyttige tips angående lister. Hvis du lurer på hva lengden av en liste er kan du bruke len(length) for å returnere dette. For eks. len(['katt', 5, 'fredag', 7, 2014]) vil returnere 5 fordi det er lengden av denne listen. Du kan også slå sammen to lister ved å plusse dem med hverandre. Listene ['mandag','tirsdag','onsdag']+['torsdag','fredag','lørdag','søndag'] vil gi listen ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']. Hvis du ganger listen din med et tall, vil svaret bli listen repetert så mange ganger som tallet du ganget med. [Hei] * 3 ser da ut [Hei, Hei, Hei]. Hvis du lurer på om listen din inneholder et spesielt element kan du bruke "in", som katt in ['katt', 5, 'fredag', 7, 2014], svaret vil da bli True ettersom listen inneholder ordet katt. Du kan iterere gjennom en listen med en for-løkke (løkker kommer vi mer til senere på siden) og utføre en operasjon hver gang løkken kommer til et nytt element.  Dette gjøres slik: for i in [1, 2, 3, 4, 5]: print x. Løkken vil da printe ut x verdien for hvert element i listen og vi vil få printet 1 2 3 4 5.</p>
+
+
+
     </div>
   </section>
+
+
+
+
 
   <footer>
     <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
