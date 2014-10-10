@@ -36,8 +36,19 @@ pre literal
 {
     color:#550;
 }
-
+/**************************************
+ * Style kommentarer og tall/strenger
+ *  i kommentarer
+ ***************************************/
 pre comment
 {
-    color:#666;
+    color:#666!important;
+}
+pre comment key
+{
+    color:#666!important;
+}
+pre comment string
+{
+    color:#666!important;
 }
