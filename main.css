@@ -108,6 +108,18 @@ section
     font-size:18px;
 }
 
+.forklaringstabell tr
+{
+
+}
+.forklaringstabell td
+{
+    margin-left:20px;
+    padding:5px;
+    font-family:sans-serif;
+}
+
+
 /********************
  * Footer section
  ********************/

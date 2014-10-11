@@ -33,30 +33,40 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Introduksjon</h1>
-      <p>Python er et objektorientert programmeringsspråk utviklet av Guido van Rossum. 
-	 Forfatteren av språket gav navnet Python fordi han mener at programmering skal være gøy.
-	 For å kunne kjøre python kode må man ha en python inteprenter (tolker) som oversetter koden 
-	 til maskinkode. Hvis du bruker Linux eller OS X har du allerde en python inteprenter installert, 
-	men hvis du har en Windows maskin kan du laste ned en inteprenter fra 
-	<a href="http://www.python.org">Python sin side.</a></p>
-
-      <p>Kommentarer er linjer i koden som inteprenteren ignorerer. En kommentar begynter med en hashtag (#) 
-	 og varer ut linjen. Bruk kommentarer for å forklare hva du gjør i koden </p>
-
-      <!-- Eksempel kode --->
+      <h1>Betingelser</h1>
+      <p>En betingelser er veiskiller i kode. Det får koden
+	 til å gå i forskjellige rettninger basert på verier til variabler og funksjoner.
+	Vi har 5 typer betingelser i Python:
+	<table class="forklaringstabell">
+	  <tr>
+	    <td>If</td><td>Hvis dette så ... </td>
+	  </tr>
+	  <tr>
+	    <td>Else</td><td>hvis ikke så ... </td>
+	  </tr>
+	  <tr>
+	    <td>Elif</td><td>hvis ikke, så dette ... </td>
+	  </tr>
+	  <tr>
+	    <td>While</td><td>Så lenge som, gjør dette ... </td>
+	  </tr>
+	  <tr>
+	    <td>For</td><td>For så mange ganger, gjør dette ... </td>
+	  </tr>
+	</table>
+	</p>
       <h2 class="exampleHeader">Eksempel</h2>
       <pre class="syntax:python">
-	# dette er en kommentar
-	print "Hei Verden" 
+	x = 5
+	if x == 5:
+	     print("Hei Verden")
+	else: 
+	     print("X er ikke 5")
       </pre>
       <h2 class="exampleHeader">Utskrift</h2>
       <pre>
 	Hei Verden
       </pre>
-    </div>
-  </section>
-
   <footer>
     <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
     | sist oppdatert: 5.oktober 2014</p>
