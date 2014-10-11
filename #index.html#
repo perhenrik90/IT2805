@@ -5,7 +5,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<script src="syntax/python.js"></script>
-	<script src="pointsstorage.js"></script>
 	<link rel="stylesheet" type="text/css" href="syntax/python.css"></link>
 </head>
 
@@ -13,7 +12,6 @@
   <header>
     <h1>Python Skolen</h1>
   </header>
-
   <nav class="topMenu">
     <a href="index.html">Skole</a> |
     <a href="kontakt.html">Kontakt Oss</a> |
