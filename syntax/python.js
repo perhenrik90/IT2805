@@ -63,7 +63,8 @@ function applyHeadlightForElement(preElement)
 
     // tag alle tekst strenger
     c = c.replace(/(".*")/g, "<string>$1</string>");
-    c = c.replace(/('.*')/g, "<string>$1</string>");
+    c = c.replace(/('\w*')/g, "<string>$1</string>");
+
 
     // tag kommentarer
     c = c.replace(/(#.*\n)/g, "<comment>$1</comment>");
