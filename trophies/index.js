@@ -11,7 +11,7 @@ function initSite()
     ts = connectTrophyStorage();
     trophies = ts.getTrophies();
     
-    if(trophies.length == 0)
+    if(!trophies || trophies.length == 0)
     {
 	tl.innerHTML = "Du har ingen trofeer ennå!";
 	return;
