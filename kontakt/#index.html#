@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<script src="syntax/python.js"></script>
+	<script src="../js/topmenu.js"></script>
 	<link rel="stylesheet" type="text/css" href="syntax/python.css"></link>
 </head>
 
@@ -13,11 +14,7 @@
     <h1>Om oss</h1>
   </header>
 
-  <nav class="topMenu">
-    <a href="index.html">Skole</a> |
-    <a href="kontakt.html">Kontakt Oss</a> |
-    <a href="sidekart.html">Nettsidekart</a>
-  </nav>
+  
 
   <section>
     <!-- Menu at the side -->
