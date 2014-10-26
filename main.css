@@ -50,7 +50,7 @@ nav.topMenu a
 }
 
 /*********************
- * Main section
+ * Menu at the side
  *********************/
 #sidemenu
 {
@@ -64,13 +64,33 @@ nav.topMenu a
     border:2px solid black;
     border-radius:5px;
     padding:10px;
-    
+    font-family:sans-serif;    
 }
 #sidemenu h1
 {
     margin-top:2px;
+
+}
+#sidemenu p
+{
+    border-radius:5px;
+    background-color:#000;
+    padding:5px;
+    font-size:17px;
+}
+#sidemenu a
+{
+    text-decoration:none;
+   color:#FFF;
+}
+#sidemenu a:visited
+{
+    color:#CCC;
 }
 
+/*****************************
+ * Main text area 
+ *****************************/
 #maintextarea
 {
     position:absolute;
