@@ -33,7 +33,8 @@ function connectTrophyStorage()
     /** få alle trofeer **/ 
     obj.getTrophys = function()
     {
-	return this.porints;
+	str = window.localStorage.getItem(storageid);
+	return JSON.parse(str);
     }
 
     return obj;
