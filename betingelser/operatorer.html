@@ -25,42 +25,48 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Betingelser</h1>
-      <p>En betingelser er veiskiller i kode. Det får koden
-	 til å gå i forskjellige rettninger basert på verier til variabler og funksjoner.
-	Vi har 5 typer betingelser i Python:
+      <h1>Operatorer ved betingelser</h1>
+      <p>En verdi til en betingelse kan ha to verdier:
+	 Sann eller usann (0/1).
+	 For å gi en sann eller usann verdi til en betingelse
+	 bruker vi operatorer. Disse er: 
 	<table class="forklaringstabell">
 	  <tr>
-	    <td>If</td><td>Hvis dette så ... </td>
+	    <td>==</td><td>Lik</td>
 	  </tr>
 	  <tr>
-	    <td>Else</td><td>hvis ikke så ... </td>
+	    <td>!=</td><td>Ikke lik</td>
 	  </tr>
 	  <tr>
-	    <td>Elif</td><td>hvis ikke, så dette ... </td>
+	    <td><</td><td>Mindre enn</td>
 	  </tr>
 	  <tr>
-	    <td>While</td><td>Så lenge som, gjør dette ... </td>
+	    <td>></td><td>Større enn </td>
 	  </tr>
 	  <tr>
-	    <td>For</td><td>For så mange ganger, gjør dette ... </td>
+	    <td>>=</td><td>Større eller lik</td>
 	  </tr>
 	</table>
-	</p>
+
       <h2 class="exampleHeader">Eksempel</h2>
       <pre class="syntax:python">
-	x = 5
-	if x == 5:
-	     print("Hei Verden")
-	else: 
-	     print("X er ikke 5")
+	x = 4 == 4
+	y = 4 != 4
+	z = 5 != 4
+
+	print "X: ",x
+	print "Y: ",y
+	print "Z: ",z
       </pre>
       <h2 class="exampleHeader">Utskrift</h2>
       <pre>
-	Hei Verden
+	X: True
+	Y: False
+	Z: True
       </pre>
+
       <nav id="bottomMenu">
-	<a href="operatorer.html">Neste</a>
+	<a href="index.html">Tilbake</a>
       </nav>
   <footer>
     <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
