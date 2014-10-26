@@ -1,4 +1,4 @@
-Gruppeprosjekt IT2805
+Gruppe-prosjekt IT2805
 =====================
 
 Dette repositoriet inneholder gruppeprosjekt it IT2805.
@@ -11,8 +11,8 @@ Deltakere i prosjektet er:
 JavaScript
 ----------
 Mappen "syntax" inneholder javascript filen "python.js" som 
-travaserer alle elementer av klassen "syntax:python" og setter
-tags forran python nøkkelord. Foreksempel alle forekomster av
+traverserer alle elementer av klassen "syntax:python" og setter
+tags foran python nøkkelord. For eksempel alle forekomster av
 ordet "if" blir oversatt til "<key>if</key>". På den måten
 kan man bruke css for å sette farge på forskjellige deler av
 python koden.
