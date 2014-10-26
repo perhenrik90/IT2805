@@ -16,7 +16,7 @@ function applyHeadlight()
 	applyHeadlightForElement(element);
     }
 }
-
+window.addEventListener("load", applyHeadlight);
 
 function applyHeadlightForElement(preElement)
 {
