@@ -3,10 +3,10 @@ Todolist for prosjekt
 [x]    - Introduksjon (PH)
 []      - Variabler (SY)
 []      - Lister (EM)
-[]      - Betingelser
-[]      - Pakker
-[]      - Funksjoner
-[]      - Objekter
+[]      - Betingelser (PH)
+[]      - Pakker (SY)
+[]      - Funksjoner (EM)
+[]      - Objekter (SY-EM)
 
 []	- Kontakt (kontakt.html)
 []	- Sidekart (denne tar vi til slutt)
