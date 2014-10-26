@@ -31,7 +31,7 @@ function connectTrophyStorage()
     }
     
     /** få alle trofeer **/ 
-    obj.getTrophys = function()
+    obj.getTrophies = function()
     {
 	str = window.localStorage.getItem(storageid);
 	return JSON.parse(str);

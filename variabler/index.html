@@ -6,6 +6,7 @@
 	<title>Python skolen - Variabler</title>
 	<script src="../syntax/python.js"></script>
 	<script src="../js/topmenu.js"></script>
+	<script src="../js/trophystorage.js"></script>
 	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
 </head>
 
@@ -17,8 +18,10 @@
   <!-- fylles av js/topmenu.js -->
   <nav class="topMenu" id="topmenu">
   </nav>
-
-
+  <script>
+    ts = connectTrophyStorage();
+    ts.setTrophy("Startet variabler",1);
+  </script>
 
   <section>
     <!-- Menu at the side -->

@@ -140,6 +140,15 @@ section
     font-family:sans-serif;
 }
 
+.trophyTable
+{
+    border:1px solid black;
+    padding:5px;
+}
+.trophyTable tr
+{
+    margin-bottom:10px;
+}
 
 /********************
  * Footer section
