@@ -25,6 +25,15 @@ function connectTrophyStorage()
     /** set et trofe for lagring ***/
     obj.setTrophy = function(key, value)
     {
+
+	// hvis nøkkelen har en lavere verdi en allerede
+	// lagret: ignorer oppdatering.
+	tr = this.getTrophies();
+	console.log(tr[key]);
+
+	if(tr[key] && tr[key] > value){return 0;}
+	
+	// set nytt trofe. 
 	this.points[key] = value;
 	string = JSON.stringify(this.points);
 	storageString = window.localStorage.setItem(storageid,string);
