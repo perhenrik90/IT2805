@@ -10,8 +10,19 @@
 	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
 	<script src="../js/trophystorage.js"></script>
 	<script>
-	  ts = connectTrophyStorage();
-	  ts.setTrophy("Betingelser",1);
+	  function checkAnswer(v)
+	  {
+	     document.getElementById("form").style.display = "none";
+	     document.getElementById("question").style.display = "none";
+	     if(v)
+	     {
+	       	     document.getElementById("right").style.display = "block";
+	             connectTrophyStorage().setTrophy("Betingelser",2);
+	       return true;
+	     }
+	     document.getElementById("wrong").style.display = "block";
+
+	  }
 	</script>
 </head>
 
@@ -30,44 +41,32 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Betingelser</h1>
-      <p>En betingelser er veiskiller i kode. Det får koden
-	 til å gå i forskjellige rettninger basert på verier til variabler og funksjoner.
-	Vi har 5 typer betingelser i Python:
-	<table class="forklaringstabell">
-	  <tr>
-	    <td>If</td><td>Hvis dette så ... </td>
-	  </tr>
-	  <tr>
-	    <td>Else</td><td>hvis ikke så ... </td>
-	  </tr>
-	  <tr>
-	    <td>Elif</td><td>hvis ikke, så dette ... </td>
-	  </tr>
-	  <tr>
-	    <td>While</td><td>Så lenge som, gjør dette ... </td>
-	  </tr>
-	  <tr>
-	    <td>For</td><td>For så mange ganger, gjør dette ... </td>
-	  </tr>
-	</table>
-	</p>
-      <h2 class="exampleHeader">Eksempel</h2>
+      <h1>Oppgave - betingelser</h1>
+      <p id="question">Hva printer vedlagt kode?</p>
+      <p id="right" style="display:none">Riktig!</p>
+      <p id="wrong" style="display:none">Feil svar!
+      Riktig svar er "Tango".</p>
       <pre class="syntax:python">
-	x = 5
+x = 10
+y = 11
+if x != y:
+    print "Bingo"
+elif x > y:
+    print "Bongo"
 
-	if x == 5:
-	     print("Hei Verden")
-	else: 
-	     print("X er ikke 5")
+print "Tango"
       </pre>
-      <h2 class="exampleHeader">Utskrift</h2>
-      <pre>
-	Hei Verden
-      </pre>
+
+      <form id="form">
+	<input type="button" value="Bingo" onclick="checkAnswer()"/> 
+	<input type="button" value="Bongo" onclick="checkAnswer()"/>
+	<input type="button" value="Tango" onclick="checkAnswer(true)"/>
+      </form>
+
       <nav id="bottomMenu">
-	<a href="operatorer.html">Neste</a>
+	<a href="operatorer.html">Tilbake</a> |
       </nav>
+
   <footer>
     <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
     | sist oppdatert: 5.oktober 2014</p>
