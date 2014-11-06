@@ -2,10 +2,10 @@ Todolist for prosjekt
 
 [x]    - Introduksjon (PH)
 []      - Variabler (SY)
-[]      - Lister (EM)
+[x]      - Lister (EM)
 []      - Betingelser (PH)
 []      - Pakker (SY)
-[]      - Funksjoner (EM)
+[x]      - Funksjoner (EM)
 []      - Objekter (SY-EM)
 
 []	- Kontakt (kontakt.html)

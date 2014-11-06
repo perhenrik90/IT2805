@@ -25,26 +25,35 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Introduksjon</h1>
-      <p>Python er et objektorientert programmeringsspråk utviklet av Guido van Rossum. 
-	 Forfatteren av språket gav navnet Python fordi han mener at programmering skal være gøy.
-	 For å kunne kjøre python kode må man ha en python inteprenter (tolker) som oversetter koden 
-	 til maskinkode. Hvis du bruker Linux eller OS X har du allerde en python inteprenter installert, 
-	men hvis du har en Windows maskin kan du laste ned en inteprenter fra 
-	<a href="http://www.python.org">Python sin side.</a></p>
+      <h1>Funksjoner</h1>
+      <p>Funksjoner er noe programmerere bruker for å dele opp et program i mindre deler. De lar oss også gjenbruke kode, så slipper man å skrive det på nytt, man kan heller bare kalle funksjonen igjen. 
+        For å deklarere en funksjon starter du linjen med "def" nøkkelordet (kort for define), etterfulgt av parenteser som inneholder parametere, og avslutt med kolon. Parameteren er en variabel som blir sendt fra programmet og inn i funksjonen, når funksjonen blir kalt. Koden du skriver etter kolon er det som blir kjørt når funksjonen kalles. Etter at du har skrevet inn koden du vil skal kjøre ender du funksjonen, samt returnerer svaret, med return nøkkelordet.
+	   </p>
 
-      <p>Kommentarer er linjer i koden som inteprenteren ignorerer. En kommentar begynter med en hashtag (#) 
-	 og varer ut linjen. Bruk kommentarer for å forklare hva du gjør i koden </p>
+      <p></p>
 
       <!-- Eksempel kode --->
       <h2 class="exampleHeader">Eksempel</h2>
       <pre class="syntax:python">
-	# dette er en kommentar
-	print "Hei Verden" 
+   #her defineres funksjoner
+  def hallo():
+  print "Hallo"
+
+  def velkommen(navn):
+	print "Velkommen", navn
+
+
+  #her kalles funksjonene
+  hallo()
+  hallo()
+
+  velkommen("Ola")
       </pre>
       <h2 class="exampleHeader">Utskrift</h2>
       <pre>
-	Hei Verden
+	Hallo
+        Hallo
+        Velkommen Ola
       </pre>
     </div>
   </section>
