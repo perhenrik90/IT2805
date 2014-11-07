@@ -17,6 +17,6 @@ function initTopmMenu()
     addButton("Skole", "../index.html");
     addButton("Kontakt oss", "../kontakt/index.html");
     addButton("Sidekart", "../sidekart.html");
-    addButton("Mine progresjon", "../trophies/index.html");
+    addButton("Mine trofeer", "../trophies/index.html");
 }
 window.addEventListener("load", initTopmMenu);
