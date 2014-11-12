@@ -157,16 +157,16 @@ section
 /** Meny på bunnen ***/
 #bottomMenu
 {
-    border:2px solid black;
-    background-color:#555;
+	margin-top:10px;
+
     padding:5px;
-    color:#FFF;
+    color:#222;
     font-family:sans-serif;
     font-size:28px;
 }
 #bottomMenu a
 {
-    color:#FFF;
+    color:#222;
 }
 
 /********************
