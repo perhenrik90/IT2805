@@ -175,8 +175,10 @@ input
 {
     background-color:#E58824;
     border:5px solid #E58824;
+    border-radius:5px;
     font-size:24px; 
     font-weight:bold;
+    
 }
 
 /********************
