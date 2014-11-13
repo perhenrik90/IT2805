@@ -30,29 +30,40 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Lister</h1>
-      <p>En liste i Python er noe som kan inneholde flere elementer. Elementene behøver ikke å være av samme type så du kan lagre forskjellige type verdier sammen. For å lage en liste setter du listenavnet lik flere elementer etter hverandre separert med komma i mellom og klammer på hver side. </p>
+      <h1>Oppdatere listeverdier:</h1>
+      <p>Hvis du vil oppdatere en eller flere verdier i en liste, kan det gjøres ved skrive listeposisjonen = den nye verdien du vil den skal ha. Det kan også gjøres med append()-metoden som legger til elementer på slutten av listen.</p>
 
-      
 
-      
-      <h2 class="exampleHeader">Eksempel</h2>
-      <pre id="python" class="syntax:python">
+<h2 class="exampleHeader">Eksempel</h2>
+      <pre class="syntax:python">
 
-	list1 = ['katt', 5, 'fredag', 7, 2014];
-        list2 = [1,2,3,4,5];
+  list1 = ['katt', 5, 'fredag', 7, 2014];
 
-	print "List 1:", list1 
-        print "List 2:", list2
-      </pre>
+  print "Verdi på indeks 2: "
+  print list1[2];
+  #Så endrer vi verdien fra fredag til lørdag
+  list[2] = lørdag;
+  print "Ny verdi på indeks 2: "
+  print list[2];
+
+  #append()-metoden
+  list1.append('bacon','egg');
+  print "Listen etter å ha lagt til elementer med append()-metoden."
+  print list1;
+
+</pre>
       <h2 class="exampleHeader">Utskrift</h2>
       <pre>
-	List 1: ['katt', 5, 'fredag', 7, 2014]
-        List 2: [1,2,3,4,5]
+        Verdi på indeks 2: fredag
+        Ny verdi på indeks 2: lørdag
+        Listen etter å ha lagt til elementer med append()-metoden.
+        ['katt', 5, 'lørdag', 7, 2014, 'bacon', 'egg']
       </pre>
 
+
       <nav id="bottomMenu">
-        <a href="verdier.html">Neste</a>
+        <a href="verdier.html">Tilbake</a> |
+        <a href="slette.html">Neste</a>
       </nav>
     </div>
     

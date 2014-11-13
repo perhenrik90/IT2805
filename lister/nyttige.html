@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Python skolen - Introduksjon</title>
+	<script src="../syntax/python.js"></script>
+	<script src="../js/topmenu.js"></script>
+	<script src="../js/sidemenu.js"></script>
+	<script src="../js/trophystorage.js"></script>o
+	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
+	<script>
+	  ts = connectTrophyStorage();
+	  ts.setTrophy("Lister",1);
+	</script>
+</head>
+
+<body>
+  <header>
+    <h1>Python Skolen - Lister</h1>
+  </header>
+
+  <!-- fylles av js/topmenu.js -->
+  <nav class="topMenu" id="topmenu">
+  </nav>
+
+  <section>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Noen nyttige list operasjoner:</h1>
+      <p>Til slutt har vi noen nyttige tips angående lister. Hvis du lurer på hva lengden av en liste er kan du bruke len(length) for å returnere dette. For eks. len(['katt', 5, 'fredag', 7, 2014]) vil returnere 5 fordi det er lengden av denne listen. Du kan også slå sammen to lister ved å plusse dem med hverandre. Listene ['mandag','tirsdag','onsdag']+['torsdag','fredag','lørdag','søndag'] vil gi listen ['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']. Hvis du ganger listen din med et tall, vil svaret bli listen repetert så mange ganger som tallet du ganget med. [Hei] * 3 ser da ut [Hei, Hei, Hei]. Hvis du lurer på om listen din inneholder et spesielt element kan du bruke "in", som katt in ['katt', 5, 'fredag', 7, 2014], svaret vil da bli True ettersom listen inneholder ordet katt. Du kan iterere gjennom en listen med en for-løkke (løkker kommer vi mer til senere på siden) og utføre en operasjon hver gang løkken kommer til et nytt element.  Dette gjøres slik: for i in [1, 2, 3, 4, 5]: print x. Løkken vil da printe ut x verdien for hvert element i listen og vi vil få printet 1 2 3 4 5.</p>
+
+
+       <nav id="bottomMenu">
+        <a href="slette.html">Tilbake</a> 
+      </nav>
+    </div>
+    
+  </section>
+
+
+
+
+  <footer>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Emil S. Andersen
+    | sist oppdatert: 5.oktober 2014</p>
+  </footer>
+</body>
+</html>
