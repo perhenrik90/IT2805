@@ -39,12 +39,53 @@
       <!-- Eksempel kode --->
       <h2 class="exampleHeader">Eksempel</h2>
       <pre class="syntax:python">
-	# dette er en kommentar
-	print "Hei Verden" 
+	#Klasse for all mennesker
+	class Menneske:
+         #Deklarer menneskeAnt variabel
+         menneskeAnt = 0
+
+         #Lager initialize metoden
+        def __init__(self, navn, alder):
+         self.navn = navn
+         self.alder = alder
+         #Inkremeneterer antallet mennesker med 1 for hvert nye menneske
+         Menneske.menneskAnt =+ 1
+
+         #Metode for å vise antall mennesker
+        def visAnt(self):
+         print "Totalt antall mennesker: " + Menneske.menneskeAnt
+
+         #Metode for å vise de forskjellige menneskene
+        def visMennesker(self):
+         print "Navn: ", self.navn, ", Alder: ", self.alder
+
+
+         #For å lage instanser av klassen, kaller du klassen med navn og legger inn argumenter 
+         #som __init__ metoden tillater.
+
+         #Dette instansierer den første Menneske klassen
+          menneske1 = Menneske("Arne", 43)
+
+          #Dette instansierer den andre Menneske klassen
+          menneske2 = Menneske("Lise", 35)
+
+
+
+          #Dette kaller vis menneske metodene med de gitte argumentene
+          menneske1.visMennesker()
+          menneske2.visMennesker()
+
+          #Dette printer totalt antall mennesker
+          print "Totalt antall mennesker: "+ Menneske.menneskeAnt
+
+
       </pre>
       <h2 class="exampleHeader">Utskrift</h2>
       <pre>
-	Hei Verden
+	
+        Navn: Arne, Alder: 43
+        Navn: Lise, Alder: 35
+        Totalt antall mennesker: 2
       </pre>
 
     </div>

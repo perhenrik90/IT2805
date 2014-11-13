@@ -6,7 +6,7 @@ Todolist for prosjekt
 []      - Betingelser (PH)
 []      - Pakker (SY)
 [x]      - Funksjoner (EM)
-[]      - Objekter (SY-EM)
+[x]      - Objekter (SY-EM)
 
 []	- Kontakt (kontakt.html)
 []	- Sidekart (denne tar vi til slutt)
