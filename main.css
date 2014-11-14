@@ -19,7 +19,7 @@ h1
  ******************************/
 header
 {
-    background-color:#000;
+    background-color:#1A546A;
     position:absolute;
     top:0px;
     left:0px;
@@ -34,7 +34,8 @@ header h1
 }
 nav.topMenu
 {
-    background-color:#000;
+    background-color:#1A546A;
+    color:#FFF;
     position:absolute;
     top:60px;
     left:0px;
@@ -60,8 +61,7 @@ nav.topMenu a
     bottom:200px;
     width:150px;
     height:400px;
-    background-color:#FFF;
-    border:2px solid black;
+    background-color:#A18F68;
     border-radius:5px;
     padding:10px;
     font-family:sans-serif;    
@@ -74,14 +74,15 @@ nav.topMenu a
 #sidemenu p
 {
     border-radius:5px;
-    background-color:#000;
+    background-color:#1A546A;
     padding:5px;
     font-size:17px;
 }
 #sidemenu a
 {
-    text-decoration:none;
-   color:#FFF;
+   text-decoration:none;
+   font-weight:bold;
+   color:#E58824;
 }
 #sidemenu a:visited
 {
@@ -105,7 +106,7 @@ pre
 {
     margin-top:2px;
     width:700px;
-    border:2px solid #888;
+    border:2px solid #A18F68;
     border-radius:5px;
     padding:5px;
 }
@@ -166,7 +167,18 @@ section
 }
 #bottomMenu a
 {
-    color:#222;
+    color:#000;
+}
+
+/**** input styles ****/
+input
+{
+    background-color:#E58824;
+    border:5px solid #E58824;
+    border-radius:5px;
+    font-size:24px; 
+    font-weight:bold;
+    
 }
 
 /********************
@@ -174,7 +186,7 @@ section
  ********************/
 footer
 {
-    background-color:#000;
+    background-color:#1A546A;
     position:fixed;
     height:40px;
     left:0px;
@@ -186,4 +198,5 @@ footer p
 {
     color:#FFF;
     margin-left:20px;
+    margin-top:10px;
 }

@@ -1,0 +1,8 @@
+Color palette
+=============
+
+Grey - #DCE2ED
+Slate Teal - #1A546A
+Smooth Sailing - #02779E
+Vulture - #A18F68
+Soklt - #E58824
