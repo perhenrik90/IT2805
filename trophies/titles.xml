@@ -1,9 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf8"></meta>
-</head>
-
-<body>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="titles.css"?>
+<titles>
+	<title>
+		<points>0</points>
+		<titlename>Noob</titlename>
+	</title>
+	<title>
+		<points>5</points>
+		<titlename>Lovende Programmerer</titlename>
+	</title>
+	<title>
+		<points>10</points>
+		<titlename>Lat Hacker</titlename>
+	</title>
+	<title>
+		<points>15</points>
+		<titlename>Algoritme rytter</titlename>
+	</title>
+	<title>
+		<points>20</points>
+		<titlename>Python konge</titlename>
+	</title>
+</titles>
