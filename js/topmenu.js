@@ -14,9 +14,9 @@ function initTopmMenu()
 	a.href = href;
 	div.appendChild(a);
     }
-    addButton("Skole", "../index.html");
+    addButton("Skole", "../main/index.html");
     addButton("Kontakt oss", "../kontakt/index.html");
-    addButton("Sidekart", "../sidekart.html");
+    addButton("Sidekart", "../main/sidekart.html");
     addButton("Mine trofeer", "../trophies/index.html");
 }
 window.addEventListener("load", initTopmMenu);
