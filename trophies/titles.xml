@@ -3,7 +3,7 @@
 <titles>
 	<title>
 		<points>0</points>
-		<titlename>Noob</titlename>
+		<titlename>Nybegynner</titlename>
 	</title>
 	<title>
 		<points>5</points>
@@ -20,5 +20,9 @@
 	<title>
 		<points>20</points>
 		<titlename>Python konge</titlename>
+	</title>
+	<title>
+		<points>25</points>
+		<titlename>Rakettforsker</titlename>
 	</title>
 </titles>

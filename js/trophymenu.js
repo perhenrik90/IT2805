@@ -16,7 +16,7 @@ function initTrophyMenu()
 
     // setter opp paragrafer
     titleTag = document.createElement("h1");
-    titleTag.innerHTML = "Tittel systemet fungerer ikke, xml fil med titler kan bare lastes fra en http server";
+    titleTag.innerHTML = "Nybegynner";
     menu.appendChild(titleTag);
 
     pointsTag = document.createElement("p");
