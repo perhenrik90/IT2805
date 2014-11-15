@@ -1,0 +1,29 @@
+/************************
+ * Stil for titles.xml
+ ************************/
+titles
+{
+	margin:10px;
+	padding:20px;
+	border:2px solid black;
+}
+
+title
+{
+	display:block;
+	font-size:20px;
+	margin-bottom:15px;
+	width:300px;
+	border-bottom:2px solid black;
+}
+
+titlename
+{
+	color:#005;
+	margin-right:10px;
+}
+
+points
+{
+	margin-right:10px;
+}
