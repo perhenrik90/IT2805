@@ -1,7 +1,7 @@
 Todolist for prosjekt
 
 [x]    - Introduksjon (PH)
-[]      - Variabler (SY)
+[x]      - Variabler (SY)
 [x]      - Lister (EM)
 [x]      - Betingelser (PH)
 []      - Pakker (SY)
