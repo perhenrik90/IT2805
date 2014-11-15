@@ -82,7 +82,7 @@ function loadTitlesXML(callBack)
     xhttp.overrideMimeType('text/xml');
     // false forteller at det skal lastes synkront
     xhttp.onreadystatechange = callBack;
-    xhttp.open("GET", "trophies/titles.xml");
+    xhttp.open("GET", "../trophies/titles.xml");
 
     try
     {
