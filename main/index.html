@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script src="syntax/python.js"></script>
+	<script src="js/trophystorage.js"></script>
+	<script src="js/trophymenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="syntax/python.css"></link>
+</head>
+
+<body>
+  <header>
+    <h1>Python Skolen</h1>
+  </header>
+
+  <nav class="topMenu" id="topmenu">
+    <a href="index.html">Skole</a> |
+    <a href="kontakt/index.html">Kontakt Oss</a> |
+    <a href="sidekart.html">Nettsidekart</a>
+    <a href="trophies/index.html">Min progresjon</a>
+  </nav>
+
+  <section>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+      <h1>Tema</h1>
+      <a href="introduksjon/index.html"><p>Introduksjon</p></a>
+      <a href="variabler/index.html"><p>Variabler</p></a>
+      <a href="lister/index.html"><p>Lister</p></a>
+      <a href="betingelser/index.html"><p>Betingelser</p></a>
+      <a href="pakker/index.html"><p>Pakker</p></a>
+      <a href="funksjoner/index.html"><p>Funksjoner</p></a>
+      <a href="objekter/index.html"><p>Objekter</p></a>
+    </div>
+
+    <!-- initieres av js/trophymenu.js  -->
+    <div id="trophyMenu">
+      <h1>Min progresjon</h1>
+      <p>Antall poeng <output id="totalPoints">0</output></p>
+      <p>Tittel: <output id="title">Nybegynner</output></p>
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Velkommen til Python skolen</h1>
+      <p>Python skolen gir deg en enkel og rask innføring
+	 til programmeringsspråket python. </p>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
+    | sist oppdatert: 5.oktober 2014</p>
+  </footer>
+  <script>
+    /** apply syntax headlightning **/
+    applyHeadlight();
+  </script>
+</body>
+</html>

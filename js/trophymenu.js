@@ -24,8 +24,37 @@ function initTrophyMenu()
 	out = document.getElementById("totalPoints");
 	out.value = sumPoints;
     }
+    
+    function setTitleOutput(title)
+    {
+	console.log(title);
+	tout = document.getElementById("title");
+	tout.value = title;
+    }
 
-    loadTitlesXML();
+
+    /** set tittel når lasting av xml er ferdig **/
+    function setTitle(data)
+    {
+	xml = data.target.responseXML;
+	if(!xml){return;}
+	titles = xml.getElementsByTagName("title");
+	for(i in titles)
+	{
+	    title = titles[i];
+	    if(!title.children){return;}
+	    pointsText = title.children[0].textContent;
+	    titleText = title.children[1].textContent;
+
+	    console.log(pointsText +" "+sumPoints);
+	    if(pointsText < sumPoints)
+	    {
+		setTitleOutput(titleText);
+	    }
+	}
+    }
+    loadTitlesXML(setTitle);
+
     
 }
 window.addEventListener("load", initTrophyMenu);
@@ -35,9 +64,10 @@ window.addEventListener("load", initTrophyMenu);
 /***********************************************
  * Load XML title list 
  * Laster inn XML fil som definerer tittler man 
- * kan få.
+ * kan få. callBack er funksjonen som skal kjøres
+ * når lastingen av xmlfilen er gjort. 
  ************************************************/
-function loadTitlesXML()
+function loadTitlesXML(callBack)
 {
     // load xml file
     if (window.XMLHttpRequest) 
@@ -51,7 +81,8 @@ function loadTitlesXML()
 
     xhttp.overrideMimeType('text/xml');
     // false forteller at det skal lastes synkront
-    xhttp.open("GET", "../trophies/titles.xml", false);
+    xhttp.onreadystatechange = callBack;
+    xhttp.open("GET", "trophies/titles.xml");
 
     try
     {
@@ -62,5 +93,4 @@ function loadTitlesXML()
 	console.log("Kan ikke laste XML url.");
 	console.log("XML kan ikke befinne seg på et lokalt filområdet");
     }
-    return xhttp.responseXML;
 }
