@@ -10,8 +10,18 @@ function initTrophyMenu()
 
     // bruker trophystorage.js
     ts = connectTrophyStorage();
+    if(!ts){console.log("Can not connect to Trophy Storage, is trophystorage.js included?");}
     trophies = ts.getTrophies();
     sumPoints = 0;
+
+    // setter opp paragrafer
+    titleTag = document.createElement("h1");
+    titleTag.innerHTML = "Tittel systemet fungerer ikke, xml fil med titler kan bare lastes fra en http server";
+    menu.appendChild(titleTag);
+
+    pointsTag = document.createElement("p");
+    pointsTag.innerHTML  = "Du har ingen poeng.";
+    menu.appendChild(pointsTag);
 
     /* teller totale poeng **/
     for(i in trophies)
@@ -21,17 +31,13 @@ function initTrophyMenu()
     }	  
     if(sumPoints)
     {
-	out = document.getElementById("totalPoints");
-	out.value = sumPoints;
+	pointsTag.innerHTML = "Du har "+sumPoints+" poeng";
     }
     
     function setTitleOutput(title)
     {
-	console.log(title);
-	tout = document.getElementById("title");
-	tout.value = title;
+	titleTag.innerHTML = title;
     }
-
 
     /** set tittel når lasting av xml er ferdig **/
     function setTitle(data)
@@ -62,7 +68,9 @@ window.addEventListener("load", initTrophyMenu);
 
 
 /***********************************************
- * Load XML title list 
+ * Load XML title list - OBS av sikkerhetsmessige grunner 
+ * fungerer ikke dette når xml ligger lokalt.
+ * 
  * Laster inn XML fil som definerer tittler man 
  * kan få. callBack er funksjonen som skal kjøres
  * når lastingen av xmlfilen er gjort. 

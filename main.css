@@ -59,7 +59,7 @@ nav.topMenu a
     left:0px;
     top:100px;
     bottom:200px;
-    width:150px;
+    width:200px;
     height:400px;
     background-color:#A18F68;
     border-radius:5px;
@@ -95,8 +95,8 @@ nav.topMenu a
 #maintextarea
 {
     position:absolute;
-    left:200px;
-    right:0px;
+    left:250px;
+    right:250px;
     top:10px;
     padding-bottom:100px;
 }
@@ -169,7 +169,7 @@ section
     right:0px;
     top:100px;
     bottom:200px;
-    width:150px;
+    width:200px;
     height:400px;
     background-color:#A18F68;
     border-radius:5px;
