@@ -28,6 +28,7 @@ function applyHeadlightForElement(preElement)
     c = c.replace(/(print)/g, "<key>$1</key>");
     c = c.replace(/(return) /g, "<key> $1 </key>");
     c = c.replace(/(class) /g, "<key> $1 </key>");
+    c = c.replace(/(elif)/g, "<key>$1</key>");
     c = c.replace(/(if) /g, "<key> $1 </key>");
     c = c.replace(/(else)/g, "<key>$1</key>");
     c = c.replace(/(while)/g, "<key>$1</key>");
@@ -36,7 +37,6 @@ function applyHeadlightForElement(preElement)
     c = c.replace(/(from)/g, "<key>$1</key>");
     c = c.replace(/(not)/g, "<key>$1</key>");
     c = c.replace(/(as)/g, "<key>$1</key>");
-    c = c.replace(/(elif)/g, "<key>$1</key>");
     c = c.replace(/(global)/g, "<key>$1</key>");
     c = c.replace(/(or)/g, "<key>$1</key>");
     c = c.replace(/(width)/g, "<key>$1</key>");

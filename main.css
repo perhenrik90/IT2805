@@ -145,19 +145,31 @@ section
  * Trophy elements
  * trofe elementer
  ***************************/
-
-.trophyTable
+#trophylist
 {
-    border:1px solid black;
-    padding:5px;
+    width:80%;
 }
-.trophyTable tr
+.trophyCase
 {
-    margin-bottom:10px;
+    text-align:center;
+    position:relative;
+    border:1px solid black;
+    height:120px;
+    width:160px;
+    margin:15px;
+    float:left;
+}
+.trophyText
+{
+    position:absolute;
+    font-size:10px;
+    bottom:2px;
+    margin:0px;
 }
 .smallTrophy
 {
-    width:40px;
+    margin-top:2px;
+    height:70%;
 }
 
 /*********************
