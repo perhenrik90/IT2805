@@ -215,6 +215,41 @@ input
     
 }
 
+/*** Sitemap styling ***/
+
+#sitemap
+{
+    padding:10px;
+    border:1px solid #1A546A;
+}
+#sitemap h1
+{
+    margin:0px;
+    padding:0px;
+}
+#sitemap p
+{
+    margin:0px;
+    margin-right:25px;
+    float:left;
+}
+#sitemap a
+{
+    font-family:sans-serif;
+    color:#1A546A;
+    text-decoration:none;
+}
+.group
+{
+    margin-bottom:50px;
+}
+hr
+{
+    color:#1A546A;
+    border:1px dotted #1A546A;
+
+}
+
 /********************
  * Footer section
  ********************/
