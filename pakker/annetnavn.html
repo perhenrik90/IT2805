@@ -34,16 +34,15 @@
   </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Pakker</h1>
-      <p>Pakker eller bibliotek er en sammling python script som gir deg tilgang til 
-	 en gitt type funksjonalitet. Det kan sees på som et bestemt verktøy som lar
-	 deg løse et problem.</p>
+      <h1>Navngi pakker</h1>
+      <p>Hvis man har behov, kan man gi nye navn på pakker før de brukes.
+      Dette gjøres ved å bruke nøkkelordet "as" etter pakkenavnet.</p>
       <!-- Eksempel kode --->
       <h2 class="exampleHeader">Eksempel</h2>
       <pre class="syntax:python">
 	# importerer pakken random
-	import random
-	r = random.randint(1,6)
+	import random as tilfeldig
+	r = tilfeldig.randint(1,6)
 	print r
       </pre>
       <h2 class="exampleHeader">Utskrift</h2>
@@ -51,7 +50,8 @@
 	"Ett tilfelldig tall mellom 1 og 6"
       </pre>
       <nav id="bottomMenu">
-        <a href="annetnavn.html">Neste</a>
+        <a href="index.html">Tilbake</a>|
+        <a href="oppgave1.html">Neste</a>
       </nav>
     </div>
   </section>
