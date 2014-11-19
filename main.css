@@ -240,6 +240,12 @@ input
     color:#1A546A;
     text-decoration:none;
 }
+#sitemap a:visited
+{
+    font-family:sans-serif;
+    color:#04333A;
+    text-decoration:none;
+}
 .group
 {
     margin-bottom:20px;
