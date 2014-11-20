@@ -233,6 +233,7 @@ input
     margin:0px;
     margin-right:25px;
     display:inline-block;
+    min-width:200px;
 }
 #sitemap a
 {
