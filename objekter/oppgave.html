@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Python skolen - Introduksjon</title>
+	<script src="../syntax/python.js"></script>
+	<script src="../js/topmenu.js"></script>
+	<script src="../js/sidemenu.js"></script>
+        <script src="../js/trophymenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
+	<script src="../js/trophystorage.js"></script>
+	<script>
+	  function checkAnswer(v)
+	  {
+	     document.getElementById("form").style.display = "none";
+	     document.getElementById("question").style.display = "none";
+	     if(v)
+	     {
+	       	     document.getElementById("right").style.display = "block";
+	             connectTrophyStorage().setTrophy("Objekter",2);
+	       return true;
+	     }
+	     document.getElementById("wrong").style.display = "block";
+
+	  }
+	</script>
+</head>
+
+<body>
+  <header>
+    <h1>Python Skolen - Betingelser</h1>
+  </header>
+  <!-- fylles av js/topmenu.js -->
+  <nav class="topMenu" id="topmenu">
+  </nav>
+
+
+  <section>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+    </div>
+    <!-- initieres av js/trophymenu.js  -->
+    <div id="trophyMenu">
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Oppgave - betingelser</h1>
+      <p id="question">Hva skrives ut av følgende program?</p>
+      <p id="right" style="display:none">Riktig!</p>
+      <p id="wrong" style="display:none">Feil svar!</p>
+      <pre class="syntax:python">
+class Hund:
+   stemme = "Bjeff"
+
+   def lagLyd(self):
+      print stemme
+
+   def setStemme(self, s):
+      self.stemme = s
+
+h = Hund()
+h.lagLyd()
+h.setStemme("Voff!")
+      </pre>
+
+      <form id="form">
+	<input type="button" value="Bjeff!" onclick="checkAnswer(true)"/> 
+	<input type="button" value="Voff" onclick="checkAnswer()"/>
+	<input type="button" value="Bjeff! Voff!" onclick="checkAnswer()"/>
+      </form>
+
+      <nav id="bottomMenu">
+	<a href="metoder.html">Tilbake</a> |
+      </nav>
+
+  <footer>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
+    | sist oppdatert: 6.november 2014</p>
+  </footer>
+  <script>
+    /** apply syntax headlightning **/
+    applyHeadlight();
+  </script>
+</body>
+</html>
