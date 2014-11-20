@@ -25,12 +25,14 @@ function applyHeadlightForElement(preElement)
     
     // tag alle nøkkelordx
     c = c.replace(/(def) /g, "<key> $1 </key>");
-    c = c.replace(/(print)/g, "<key>$1</key>");
+    c = c.replace(/(print) /g, "<key>$1</key>");
+    c = c.replace(/(print)\(/g, "<key>$1</key>(");
     c = c.replace(/(return) /g, "<key> $1 </key>");
     c = c.replace(/(class) /g, "<key> $1 </key>");
     c = c.replace(/(elif)/g, "<key>$1</key>");
     c = c.replace(/(if) /g, "<key> $1 </key>");
     c = c.replace(/(else) /g, "<key>$1</key>");
+    c = c.replace(/(else): /g, "<key>$1</key>:");
     c = c.replace(/(while) /g, "<key>$1</key>");
     c = c.replace(/(and) /g, "<key>$1</key>");
     c = c.replace(/(del)/g, "<key>$1</key>");
