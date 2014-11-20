@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Python skolen - Objekter</title>
+	<script src="../js/topmenu.js"></script>
+	<script src="../syntax/python.js"></script>
+	<script src="../js/sidemenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
+	<script src="../js/trophystorage.js"></script>
+        <script src="../js/trophymenu.js"></script>
+	<script>
+	  ts = connectTrophyStorage();
+	  ts.setTrophy("Objekter",1);
+	</script>
+</head>
+
+<body>
+  <header>
+    <h1>Python Skolen - Objekter</h1>
+  </header>
+
+  <!-- fylles av js/topmenu.js -->
+  <nav class="topMenu" id="topmenu">
+  </nav>
+
+  <section>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+    </div>
+    <!-- initieres av js/trophymenu.js  -->
+    <div id="trophyMenu">
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Objekter - Metoder</h1>
+      <p>Funksjoner som er tilordnet et objekt kalles en metode. 
+      Første argument til en metode i python er en referanse
+      til seg selv (self). Denne variabelen brukes for å 
+      nå atributter knyttet til objektet. Dette skiller seg fra
+      programmeringsspråk som C++ og Java!</p>
+
+      <!-- Eksempel kode -->
+      <h2 class="exampleHeader">Eksempel</h2>
+      <pre class="syntax:python">
+# Definerer en klasse sirkel
+class Sirkel:
+   radius = 1
+
+   # metode skriver ut radiusen
+   def printRadius(self):
+      print self.radius
+
+   # setter radius
+   def settRadius(self, r):
+      self.radius = r
+
+s1 = Sirkel()
+s1.settRadius(42)
+s1.printRadius()
+      </pre>
+      <h2 class="exampleHeader">Utskrift</h2>
+      <pre>
+42
+      </pre>
+      <nav id="bottomMenu">
+	<a href="index.html">Tilbake</a>|
+        <a href="metoder.html">Neste</a>
+      </nav>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Emil S. Andersen
+    | sist oppdatert: 14.november 2014</p>
+  </footer>
+</body>
+</html>
