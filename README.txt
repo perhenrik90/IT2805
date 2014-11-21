@@ -35,7 +35,8 @@ python koden.
 Mappen syntax inneholder også css filen python.css som setter 
 styling på formarteringen gjort av python.js
 
-
+xml:
+Xml fil ligger i trophies mappen.
 
 
 
