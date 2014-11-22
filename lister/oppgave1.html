@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../main.css"></link>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Python skolen - Introduksjon</title>
+	<title>Python skolen - Lister</title>
 	<script src="../syntax/python.js"></script>
 	<script src="../js/topmenu.js"></script>
 	<script src="../js/sidemenu.js"></script>
@@ -18,7 +18,7 @@
 	     if(v)
 	     {
 	       	     document.getElementById("right").style.display = "block";
-	             connectTrophyStorage().setTrophy("pakker",2);
+	             connectTrophyStorage().setTrophy("Betingelser",2);
 	       return true;
 	     }
 	     document.getElementById("wrong").style.display = "block";
@@ -29,7 +29,7 @@
 
 <body>
   <header>
-    <h1>Python Skolen - Pakker</h1>
+    <h1>Python Skolen - Lister</h1>
   </header>
   <!-- fylles av js/topmenu.js -->
   <nav class="topMenu" id="topmenu">
@@ -45,27 +45,38 @@
     </div>
     <!-- Main text area -->
     <div id="maintextarea">
-      <h1>Oppgave - pakker</h1>
-      <p id="question">Kjører følgende kode?</p>
+      <h1>Oppgave - lister</h1>
+      <p id="question">Hvilken farge blir printet?</p>
       <p id="right" style="display:none">Riktig!</p>
-      <p id="wrong" style="display:none">Feil svar! Pakken random får ett nytt navn rnd og vil ikke nås med navnet random.</p>
+      <p id="wrong" style="display:none">Feil svar!
+      Riktig svar er "gul".</p>
       <pre class="syntax:python">
-import random as rnd
-print random.randint(1,6)
-      </pre>
+
+list = ['brun', 'rød', 'gul', 'orange', 'blå'];
+
+print "Farge nummer 3 i listen er: ", list[2]
+
+</pre>
 
       <form id="form">
-	<input type="button" value="Ja" onclick="checkAnswer()"/> 
-	<input type="button" value="Nei" onclick="checkAnswer(true)"/>
+	<input type="button" value="rød" onclick="checkAnswer()"/> 
+	<input type="button" value="gul" onclick="checkAnswer(true)"/>
+	<input type="button" value="blå" onclick="checkAnswer()"/>
       </form>
 
       <nav id="bottomMenu">
-	<a href="annetnavn.html">Tilbake</a> |
+	<a href="nyttige.html">Tilbake</a>
       </nav>
 
+
+
   <footer>
-    <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
+    <p>IT2805-Gruppeprosjekt | Forfatter: Emil S. Andersen
     | sist oppdatert: 6.november 2014</p>
   </footer>
+  <script>
+    /** apply syntax headlightning **/
+    applyHeadlight();
+  </script>
 </body>
 </html>
