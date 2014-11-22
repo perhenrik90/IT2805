@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../main.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Python skolen - Introduksjon</title>
+	<script src="../syntax/python.js"></script>
+	<script src="../js/topmenu.js"></script>
+	<script src="../js/sidemenu.js"></script>
+        <script src="../js/trophymenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="../syntax/python.css"></link>
+	<script src="../js/trophystorage.js"></script>
+	<script>
+	  function checkAnswer(v)
+	  {
+	     document.getElementById("form").style.display = "none";
+	     document.getElementById("question").style.display = "none";
+	     if(v)
+	     {
+	       	     document.getElementById("right").style.display = "block";
+	             connectTrophyStorage().setTrophy("Betingelser",2);
+	       return true;
+	     }
+	     document.getElementById("wrong").style.display = "block";
+
+	  }
+	</script>
+</head>
+
+<body>
+  <header>
+    <h1>Python Skolen - Funksjoner</h1>
+  </header>
+  <!-- fylles av js/topmenu.js -->
+  <nav class="topMenu" id="topmenu">
+  </nav>
+
+
+  <section>
+    <!-- Menu at the side -->
+    <div id="sidemenu">
+    </div>
+    <!-- initieres av js/trophymenu.js  -->
+    <div id="trophyMenu">
+    </div>
+    <!-- Main text area -->
+    <div id="maintextarea">
+      <h1>Oppgave - funksjoner</h1>
+      <p id="question">Hva printer vedlagt kode?</p>
+      <p id="right" style="display:none">Riktig!</p>
+      <p id="wrong" style="display:none">Feil svar!
+      Riktig svar er "85".</p>
+      <pre class="syntax:python">
+
+def test1():
+    x = 50
+    y = 30
+    print x + y
+
+def test2():
+    x = 30
+    y = 65
+    print x + y
+
+def test3():
+    x = 60
+    y = 25
+    print x + y
+
+
+test3()
+</pre>
+
+      <form id="form">
+	<input type="button" value="80" onclick="checkAnswer()"/> 
+	<input type="button" value="95" onclick="checkAnswer()"/>
+	<input type="button" value="85" onclick="checkAnswer(true)"/>
+      </form>
+
+      <nav id="bottomMenu">
+	<a href="index.html">Tilbake</a>
+      </nav>
+
+  <footer>
+    <p>IT2805-Gruppeprosjekt | Forfatter: Per-Henrik Kvalnes
+    | sist oppdatert: 6.november 2014</p>
+  </footer>
+  <script>
+    /** apply syntax headlightning **/
+    applyHeadlight();
+  </script>
+</body>
+</html>
