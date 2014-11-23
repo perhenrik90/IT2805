@@ -10,10 +10,6 @@ Deltakere i prosjektet er:
 
 JavaScript
 ----------
-
-css:
-All css er definert i filen main.css (bortsett fra python syntaxheadlighter; se syntax).
-
 js:
 Mappen js inneholder javascript kode som skal kjøre på alle 
 sider. Filene sidemenu.js og topmenu.js genererer knappene.
@@ -35,9 +31,17 @@ python koden.
 Mappen syntax inneholder også css filen python.css som setter 
 styling på formarteringen gjort av python.js
 
-xml:
-Xml fil ligger i trophies mappen.
 
+CSS
+---
+css:
+All css er definert i filen main.css (bortsett fra python syntaxheadlighter; se syntax).
+
+XML
+---
+Xml fil ligger i trophies mappen. Denne brukes for å beskrive tittler som 
+brukeren av siden kan få, og poengsum som trengs for å oppnå den. 
+XSD valideringsskjema ligger også ved. 
 
 
 
