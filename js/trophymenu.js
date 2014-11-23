@@ -33,6 +33,13 @@ function initTrophyMenu()
     {
 	pointsTag.innerHTML = "Du har "+sumPoints+" poeng";
     }
+    /* åpner siden med trofeer **/
+    var trofeeLink = document.createElement('a');
+    trofeeLink.href = '#';
+    trofeeLink.innerHTML = 'Dine Trofeer';
+    trofeeLink.onclick = function () { open("../trophies/index.html","_self"); };
+    menu.appendChild(trofeeLink); 
+   ;
     
     function setTitleOutput(title)
     {
