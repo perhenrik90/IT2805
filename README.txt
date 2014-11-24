@@ -15,6 +15,13 @@ for å kunne gjøre nettsidene portable slik at python skolen kan
 benyttes på forskjellige læringsplattformer. Ved bruk av server-side
 skripting knytter man prosjektet mer til serveren som siden ligger på.
 
+Hvert tema er organisert i hver sin mappe. Alle undersidene i 
+tema-mappene har en lenket struktur. Navigering mellom tema er
+organisert i en hierarkisk struktur generert av js/sidemenu.js .
+Navigering utennom tema i python skolen er definert i top menyen. 
+På høyre side er en meny som viser status på brukerens progresjon i kurset,
+samt en leneke til en side han/hun kan se trofeer som er oppnåd. 
+
 JavaScript
 ----------
 js:
@@ -48,7 +55,7 @@ XML
 ---
 Xml fil ligger i trophies mappen. Denne brukes for å beskrive tittler som 
 brukeren av siden kan få, og poengsum som trengs for å oppnå den. 
-XSD valideringsskjema ligger også ved. 
+XSD valideringsskjema, og css for xml ligger også vedlagt i samme mappe. 
 
 
 
