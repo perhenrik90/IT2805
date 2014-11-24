@@ -189,6 +189,22 @@ section
     font-family:sans-serif;    
 }
 
+#trophyMenu a
+{
+    text-decoration:none;
+    font-weight:bold;
+    color:#E58824;
+    border-radius:5px;
+    background-color:#1A546A;
+    padding:5px;
+    font-size:17px;
+    padding:10px;
+}
+#trophyMenu a:visited
+{
+    color:#CCC;
+}
+
 /** Meny på bunnen ***/
 #bottomMenu
 {
