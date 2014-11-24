@@ -8,6 +8,13 @@ Deltakere i prosjektet er:
  - Syver Bolstad
  - Per-Henrik Kvalnes
 
+For å skrive kode har vi brukt emacs og sublime teksteditor. 
+
+Vi har valgt å lage prosjektet som et "stand alone" webprosjekt
+for å kunne gjøre nettsidene portable slik at python skolen kan 
+benyttes på forskjellige læringsplattformer. Ved bruk av server-side
+skripting knytter man prosjektet mer til serveren som siden ligger på.
+
 JavaScript
 ----------
 js:
